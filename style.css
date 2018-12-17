@@ -1,0 +1,78 @@
+body {
+color:white;
+}
+
+html {
+    background-color:black;
+}
+
+main {
+    border: solid green;
+}
+
+#haupttitel {
+    text-align: center;
+    padding-bottom: 
+}
+
+.nav-liste {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background: linear-gradient(to right, orange, blue);
+    padding-top: 0;
+    border-top-left-radius: 120px;
+    border-top-right-radius: 120px;
+}
+
+.nav-liste li {
+    list-style-type: none;
+    padding: 20px 60px 20px 60px;
+}
+
+.nav-liste a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+
+}
+
+a:hover {
+
+}
+
+#titel-html {
+    padding-top: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+#titel-internet {
+    display:flex;
+    padding-top: 40px;                                                                                                                                                     
+}
+
+.knopf-html {
+    border-style:none;
+    background:content-box;
+
+}
+
+.knopf-css {
+    border-style:none;
+    background:content-box;
+
+}
+
+.knopf-sonstiges {
+    border-style:none;
+    background:content-box;
+
+}
+
+.knopf-html:hover {
+    cursor:pointer;
+    text-decoration: underline;
+
+}
