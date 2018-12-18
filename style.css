@@ -7,12 +7,32 @@ html {
 }
 
 main {
-    border: solid green;
+    border-left: solid orange;
+    border-right: solid blue;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 100px;
 }
+
+img.web-bild {
+    width: 350px;
+    height: 200px;
+}
+
+.internet-abschnitt {
+    display:flex;
+    flex-direction: row;
+    flex-flow: row;
+}
+
+.ablauf-internet-abschnitt {
+    margin-top:100px;
+}
+
 
 #haupttitel {
     text-align: center;
-    padding-bottom: 
+    padding-bottom: 20px;
 }
 
 .nav-liste {
@@ -21,8 +41,8 @@ main {
     justify-content: center;
     background: linear-gradient(to right, orange, blue);
     padding-top: 0;
-    border-top-left-radius: 120px;
-    border-top-right-radius: 120px;
+    border-top-left-radius: 200px;
+    border-top-right-radius: 200px;
 }
 
 .nav-liste li {
@@ -39,13 +59,26 @@ main {
 }
 
 a:hover {
+text-decoration: underline;
+}
 
+a:active {
+    background-color: content
 }
 
 #titel-html {
-    padding-top: 80px;
+    position: top 0px;
     display: flex;
     justify-content: center;
+}
+
+#titel-html:hover .dropdown-liste {
+    display:block;
+}
+
+
+.dropdown-liste {
+    display:none;
 }
 
 #titel-internet {
@@ -53,26 +86,33 @@ a:hover {
     padding-top: 40px;                                                                                                                                                     
 }
 
-.knopf-html {
+#knopf-html {
     border-style:none;
     background:content-box;
 
 }
 
-.knopf-css {
+#knopf-html:hover {
+    background:rgba(0, 0, 0, 0.5);
+}
+
+#knopf-css {
     border-style:none;
     background:content-box;
 
 }
 
-.knopf-sonstiges {
+#knopf-css:hover {
+    background:rgba(0, 0, 0, 0.5);
+
+}
+
+#knopf-sonstiges {
     border-style:none;
     background:content-box;
 
 }
 
-.knopf-html:hover {
-    cursor:pointer;
-    text-decoration: underline;
-
+#knopf-sonstiges:hover {
+    background:rgba(0, 0, 0, 0.5);
 }

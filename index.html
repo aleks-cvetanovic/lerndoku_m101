@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Lerndokumentation M101</title>
-    <link href="style.css" rel="Stylesheet" type="text/css"/>
+    <link href="style.css" rel="Stylesheet" type="text/css" />
 </head>
+
 <body>
 
 
@@ -17,36 +19,47 @@
 
         <h1 id="haupttitel">Modul 101</h1>
 
-        <nav>
-                <ul class="nav-liste">
-                
-                    <button class="knopf-html">
-
-                       <li><a href="#">HTML</a></li>
-                    
-                    </button>
+        <nav class="ganze-navigation">
+            <ul class="nav-liste">
 
 
-                   
-                    <button class="knopf-css">
-                    
-                        <li><a href="#">CSS</a></li>
-                    
-                    </button>
+                <button id="knopf-html">
+                    <li><a href="#titel-html">HTML</a>
+                </button>
+
+                <div class="dropdown-liste">
+                    <li>Elemente</li>
+                    <li>Text</li>
+                    <li>besonderes Markup</li>
+                    <li>Listen</li>
+                    <li>Formulare</li>
+                    <li>Flash, Video & Audio</li>
+                    <li>Bilder</li>
+                    <li>Links</li>
+                    <li>Pfade</li>
+                    <li>Tabellen</li>
 
 
-                    
-                    <button class="knopf-sonstiges">
 
-                        <li><a href="#">Sonstiges</a></li>
-                    
-                    </button>
+                </div>
 
-                </ul>
+
+                </li>
+
+                <button id="knopf-css"><li><a href="#titel-css">CSS</a></li></button>
+
+                <button id="knopf-sonstiges"><li><a href="#titel-sonstiges">Sonstiges</a></li></button>
+
+
+
+            </ul>
 
 
         </nav>
-        
+
+
+
+
 
     </header>
 
@@ -56,20 +69,59 @@
 
 
 
-    
-            <main>
 
-                <h2 id="titel-html">HTML</h2>                    
-                <h3 id="titel-internet">Internet</h3>
-                <p>Wenn man über das Internet spricht, dann meint man die Vernetzung verschiedenster Rechner oder Server auf unserer Welt. Darunter versteht man zum Beispiel "Webserver", auf dem die
-                    von Ihnen besuchte Website liegt.
-                </p>
-                    <p>  </p>
-            </main>
+    <main>
 
-                    <footer>
-                        
-                    </footer>
+        <h2 id="titel-internet">Internet</h2>
+
+        
+
+        <div class="internet-abschnitt">
+
+            <p>Wenn man über das Internet spricht, dann meint man die Vernetzung verschiedenster Rechner oder Server
+                auf unserer Welt. Darunter versteht man zum Beispiel "Webserver", auf dem die
+                von Ihnen besuchte Website liegt. Um diesen Webserver finden zu können, wendet sich der Browser
+                zunächst an den DNS-Server (Domain Name Service).
+                Diese Server können sich irgendwo auf unserer Erde befinden. Es sind sogenannte DNS-Server, welche dem
+                Browser mitteilen, wo die Website zu finden ist.
+            </p>
+            <img src="bilder/web.jpg" class="web-bild" alt="web" title="Web" />
+
+        </div>
+
+
+        <div class="ablauf-internet-abschnitt">
+        <h2 id="ablauf-internet-titel">Zugriff auf Website</h2>
+
+        <p>Der Ablauf einer Anfrage für den Zugang auf einer Website ist simpel aufgebaut. Wenn man einen DNS-Namen
+            einer Website aufsucht, wird in dieser kurzen
+            Zwischenzeit eine Anfrage an einen DNS-Server in der Nähe geschickt, damit man weiss, wo sich der gesuchte Webserver befindet und an welchem
+            Standort sich die gewünschte Website befindet.
+            <br />
+            Danach erfolgt eine Verbindung mit dem Web über einen Internetprovider. Um eine Website besuchen
+            zu können, muss deren Domänenname oder Webadresse in den Browser eingegeben werden. (z.B. google.com)<br />
+            Im nächsten Schritt kommt der Computer an der Reihe. Der nimmt Kontakt mit dem Nertwerk des 
+            DNS-Servers (Domain Name System) auf, Diese funkgieren als eine Art Telefonbuch und teilen
+            Ihrem Computer die IP-adresse mit, die zu dem angefordeten Domänenamen gehört.
+
+        </p>
+        </div>
+
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+    <footer>
+
+    </footer>
 
 </body>
 
