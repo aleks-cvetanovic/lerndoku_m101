@@ -11,12 +11,14 @@ main {
     border-right: solid blue;
     padding-left: 20px;
     padding-right: 20px;
-    margin-top: 100px;
+    margin-top: 130px;
 }
 
 img.web-bild {
     width: 350px;
     height: 200px;
+    padding-left: 20px;
+    padding-top: 20px;
 }
 
 .internet-abschnitt {
@@ -25,15 +27,32 @@ img.web-bild {
     flex-flow: row;
 }
 
-.ablauf-internet-abschnitt {
-    margin-top:100px;
+#ablauf-internet-titel {
+    margin-top: 110px;
 }
 
+.ablauf-internet-abschnitt {
+    display:flex;
+    flex-direction: row;
+}
+
+img.zugriff-website {
+    width:500px;
+    height: 280px;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+#elemente-titel {
+    margin-top: 50px;
+}
 
 #haupttitel {
     text-align: center;
     padding-bottom: 20px;
+    font-size: 36px;
 }
+
 
 .nav-liste {
     display: flex;
@@ -45,6 +64,31 @@ img.web-bild {
     border-top-right-radius: 200px;
 }
 
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(226, 161, 76);
+    border-bottom-left-radius: 40px; 
+    border-bottom-right-radius: 40px;
+
+}
+
+.dropdown-content a {
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding:10px;
+
+}
+
+.dropdown:hover .dropdown-content {
+    display :block;
+}
+
+.dropdown:hover main {
+    margin-top: 200px;
+}
+
 .nav-liste li {
     list-style-type: none;
     padding: 20px 60px 20px 60px;
@@ -54,11 +98,11 @@ img.web-bild {
     text-decoration: none;
     color: white;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 18px;
 
 }
 
-a:hover {
+#knopf-html a:hover {
 text-decoration: underline;
 }
 
@@ -76,14 +120,50 @@ a:active {
     display:block;
 }
 
-
-.dropdown-liste {
-    display:none;
+.dropdown {
+    position:relative;
+    display:inline-block;
 }
 
-#titel-internet {
-    display:flex;
-    padding-top: 40px;                                                                                                                                                     
+.dropdown-content {
+    display:none;
+    position:absolute;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color:rgba(0, 0, 0, 0.5);
+}
+
+#link-tabellen:hover {
+    border-bottom-left-radius: 40px; 
+    border-bottom-right-radius: 40px;
+
+}
+
+#titel-internet { 
+    text-align: center;   
+    padding-bottom: 40px;
+    font-size: 28px;                                                                                                                                                 
+}
+
+#html-main-titel {
+    font-size: 28px;
+    text-align: center;
+    margin-top: 110px;
+}
+
+.html-abschnitt {
+    display: flex;
+    flex-flow: column;
+}
+
+img.html-elemente {
+    width: 600px;
+    height: 200px;
 }
 
 #knopf-html {
@@ -93,7 +173,7 @@ a:active {
 }
 
 #knopf-html:hover {
-    background:rgba(0, 0, 0, 0.5);
+    background:rgba(0, 0, 0, 0.3);
 }
 
 #knopf-css {
@@ -103,7 +183,7 @@ a:active {
 }
 
 #knopf-css:hover {
-    background:rgba(0, 0, 0, 0.5);
+    background:rgba(0, 0, 0, 0.3);
 
 }
 
@@ -114,5 +194,5 @@ a:active {
 }
 
 #knopf-sonstiges:hover {
-    background:rgba(0, 0, 0, 0.5);
+    background:rgba(0, 0, 0, 0.3);
 }

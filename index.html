@@ -21,34 +21,37 @@
 
         <nav class="ganze-navigation">
             <ul class="nav-liste">
+                <div class="dropdown">
+
+                    <button id="knopf-html">
+                        <li><a href="#html-main-titel" id="link-html">HTML</a>
+                    </button>
 
 
-                <button id="knopf-html">
-                    <li><a href="#titel-html">HTML</a>
-                </button>
-
-                <div class="dropdown-liste">
-                    <li>Elemente</li>
-                    <li>Text</li>
-                    <li>besonderes Markup</li>
-                    <li>Listen</li>
-                    <li>Formulare</li>
-                    <li>Flash, Video & Audio</li>
-                    <li>Bilder</li>
-                    <li>Links</li>
-                    <li>Pfade</li>
-                    <li>Tabellen</li>
-
-
-
+                    <div class="dropdown-content">
+                        <a href="#elemente-titel">Elemente</a>
+                        <a href="#">Text</a>
+                        <a href="#">besonderes Markup</a>
+                        <a href="#">Listen</a>
+                        <a href="#">Formulare</a>
+                        <a href="#">Flash, Video & Audio</a>
+                        <a href="#">Bilder</a>
+                        <a href="#">Links</a>
+                        <a href="#">Pfade</a>
+                        <a href="#" id="link-tabellen">Tabellen</a>
+                    </div>
                 </div>
 
 
-                </li>
 
-                <button id="knopf-css"><li><a href="#titel-css">CSS</a></li></button>
 
-                <button id="knopf-sonstiges"><li><a href="#titel-sonstiges">Sonstiges</a></li></button>
+                <button id="knopf-css">
+                    <li><a href="#titel-css">CSS</a></li>
+                </button>
+
+                <button id="knopf-sonstiges">
+                    <li><a href="#titel-sonstiges">Sonstiges</a></li>
+                </button>
 
 
 
@@ -74,7 +77,7 @@
 
         <h2 id="titel-internet">Internet</h2>
 
-        
+
 
         <div class="internet-abschnitt">
 
@@ -83,29 +86,100 @@
                 von Ihnen besuchte Website liegt. Um diesen Webserver finden zu können, wendet sich der Browser
                 zunächst an den DNS-Server (Domain Name Service).
                 Diese Server können sich irgendwo auf unserer Erde befinden. Es sind sogenannte DNS-Server, welche dem
-                Browser mitteilen, wo die Website zu finden ist.
+                Browser mitteilen, wo die Website zu finden ist.<br />
+                Das Internet verbindet Menschen, welche sehr weit ausseinander sind. Früher wurde das noch nicht so
+                wirklich ernst
+                genommen, aber heute ist das Internet ein sehr wichtiger Bestandteil der Menschheit.
             </p>
             <img src="bilder/web.jpg" class="web-bild" alt="web" title="Web" />
 
         </div>
 
-
+        <h3 id="ablauf-internet-titel">Zugriff auf Website</h3>
         <div class="ablauf-internet-abschnitt">
-        <h2 id="ablauf-internet-titel">Zugriff auf Website</h2>
 
-        <p>Der Ablauf einer Anfrage für den Zugang auf einer Website ist simpel aufgebaut. Wenn man einen DNS-Namen
-            einer Website aufsucht, wird in dieser kurzen
-            Zwischenzeit eine Anfrage an einen DNS-Server in der Nähe geschickt, damit man weiss, wo sich der gesuchte Webserver befindet und an welchem
-            Standort sich die gewünschte Website befindet.
-            <br />
-            Danach erfolgt eine Verbindung mit dem Web über einen Internetprovider. Um eine Website besuchen
-            zu können, muss deren Domänenname oder Webadresse in den Browser eingegeben werden. (z.B. google.com)<br />
-            Im nächsten Schritt kommt der Computer an der Reihe. Der nimmt Kontakt mit dem Nertwerk des 
-            DNS-Servers (Domain Name System) auf, Diese funkgieren als eine Art Telefonbuch und teilen
-            Ihrem Computer die IP-adresse mit, die zu dem angefordeten Domänenamen gehört.
 
-        </p>
+            <p>Der Ablauf einer Anfrage für den Zugang auf einer Website ist simpel aufgebaut. Wenn man einen DNS-Namen
+                einer Website aufsucht, wird in dieser kurzen
+                Zwischenzeit eine Anfrage an einen DNS-Server in der Nähe geschickt, damit man weiss, wo sich der
+                gesuchte Webserver befindet und an welchem
+                Standort sich die gewünschte Website befindet.
+                <br />
+                Danach erfolgt eine Verbindung mit dem Web über einen Internetprovider. Um eine Website besuchen
+                zu können, muss deren Domänenname oder Webadresse in den Browser eingegeben werden. (z.B. google.com)<br />
+                Im nächsten Schritt kommt der Computer an der Reihe. Der nimmt Kontakt mit dem Nertwerk des
+                DNS-Servers (Domain Name System) auf, Diese funkgieren als eine Art Telefonbuch und teilen
+                Ihrem Computer die IP-adresse mit, die zu dem angefordeten Domänenamen gehört.
+                Jedes Gerät, welches sich mit diesem Netzwerk verbunden hat, hat eine eigene spezifische IP-Adresse.
+                Diese IP-Adresse besteht aus zwölf Ziffern, die durch Punkte getrennt sind.
+                Die IP-Adressen kann mit mit unseren Telefonnummern unserer Handys vergleichen.
+                <br />
+                Über die eindeutige Nummer, welche der DNS-Server an den Rechner zurückgegeben hat, kann der Browser
+                Kontakt mit dem Webserver
+                aufnehmen, der die angeforderte Website enthält. Der Webserver ist ein Computer, welcher ständig mit
+                dem Web verbunden ist.
+                Er dient dazu, die Webseiten bereitzustellen.
+                <br />
+                Nach diesem langem Prozess wird dieser Vorgang "endlich" abgeschlossen. Der Webserver
+                sendet somit die angeforderte Seite an den Browser.
+
+            </p>
+            <img src="bilder/zugriff-website.jpg" alt="zugriff-website" class="zugriff-website" title="DNS-Abfrage" />
         </div>
+
+        <h3 id="entwicklungsumgebung-titel">Entwicklungsumgebung</h3>
+        <div class="entwicklungsumgebung-abschnitt">
+            <p>Eine Website wird hier und da verwendet. Die Entwicklungsumgebung ist sehr vielseitig.
+                Um so eine Website überhaupt erstellen zu können, verwendet man eine Beschreibungssprache.
+                Die aktuellste nennt sich "HTML 5".
+                <br />
+                Diese Beschreibungssprache muss in einem Programm angewendet werden. Beispielsweise
+                kennt man Brackets oder auch den Visual Code. Diese Programme nennt man "Editor". <br />
+                Zudem gitb es auch Grafik-, Browser- und Webserverprogramme, welche selbsterklärend sind.
+
+            </p>
+        </div>
+
+        <h3 id="html-main-titel">HTML</h3>
+        <div class="html-abschnitt">
+            <p>In HTML werden Elemente verwendet, damit man die Struktur einer Website
+                beschreiben kann. Die Elemente werden auch "Behälter" genannt. Sie teilen uns etwas über die Infos
+                zwischen
+                ihrem öffnenden und schliessenden Tag mit.
+            </p>
+            <img src="bilder/html-elemente.png" alt="html-elemente" class="html-elemente" title="HTML-Elemente" />
+        </div>
+
+        <h3 id="elemente-titel">Elemente</h3>
+        <div class="elemente-abschnitt">
+            <p>Eine Website wird strukturiert. Um diese Übersicht zu verdeutlichen
+                , braucht man mehrere Behälter. Die bekanntesten und die am meisten gebrauchten
+                Berhälter sind: &lt;html&gt;, &lt;head&gt; und &lt;body&gt;
+                <br />
+                Der Behälter &lt;html&gt; wird verwendet, um die Sprache der Website zu bestimmen.
+                <br />
+                Der &lt;body&gt; beinhaltet den ganzen Inhalt der Website. Nur das, was sich
+                im Body befindet, kann auf der Website schlussendlich erkannt werden.
+                <br />
+                <br />
+                Ein Element besteht aus einem öffnendem- und schliessendem Tag. Im öffnenden Tag ist das
+                Attribut und der Wert dieses Attributes stationiert. Mit dem Attribut spricht man die Eigenschaft an.
+                Mit dem Wert hingegen
+                wird definiert, was für Informationen und Einstellungen das Attribut haben soll.
+                <br />
+                Zwischen dem Anfangs- und Schlusstag befindet sich der Inhalt, welcher auf der Website schlussendlich
+                angezeigt wird.
+                <br />
+                Der schliessende Tag schliesst den ganzen Tag ab, sodass das nächste Element
+                nicht gestört werden kann.
+
+
+            </p>
+
+
+        </div>
+
+        <h3>Text</h3>
 
     </main>
 
