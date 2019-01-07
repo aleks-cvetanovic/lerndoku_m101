@@ -30,15 +30,14 @@
 
                     <div class="dropdown-content">
                         <a href="#elemente-titel">Elemente</a>
-                        <a href="#">Text</a>
-                        <a href="#">besonderes Markup</a>
-                        <a href="#">Listen</a>
-                        <a href="#">Formulare</a>
-                        <a href="#">Flash, Video & Audio</a>
-                        <a href="#">Bilder</a>
-                        <a href="#">Links</a>
-                        <a href="#">Pfade</a>
-                        <a href="#" id="link-tabellen">Tabellen</a>
+                        <a href="#text-titel">Text</a>
+                        <a href="#besonderes-markup-titel">besonderes Markup</a>
+                        <a href="#listen-titel">Listen</a>
+                        <a href="#formulare-titel">Formulare</a>
+                        <a href="#fva-titel">Flash, Video & Audio</a>
+                        <a href="#bilder-titel">Bilder</a>
+                        <a href="#links-titel">Links</a>
+                        <a href="#tabellen-titel" id="tabellen-link">Tabellen</a>
                     </div>
                 </div>
 
@@ -179,7 +178,384 @@
 
         </div>
 
-        <h3>Text</h3>
+        <h3 id="text-titel">Text</h3>
+        <div class="text-abschnitt">
+
+            <table>
+                <tr>
+                    <th>Element</th>
+                    <th>Beschreibung
+                    </th>
+
+                <tr>
+                    <td>&lt;h1&gt; &lt;h2&gt; <br /> &lt;h3&gt; etc.</td>
+
+                </tr>
+
+
+
+            </table>
+
+        </div>
+
+        <h3 id="besonderes-markup-titel">Besonderes Markup</h3>
+        <div class="besonderes-markup-abschnitt">
+            <p>Um eine gewisse Änderung an einem Inhaltsstück vornehmen zu können, muss man
+                diesen Bereich markieren. Hierfür verwendet man üblicherweise &lt;class&gt; und &lt;id&gt;.
+                <br />
+                &lt;class&gt; verwendet man, wenn man Kinderelemente hat und gewisse Einstellungen des Elternelements
+                darauf übernehmen möchte. &lt;id&gt; hingegen nutzt man, wenn nur ein Element vorhanden ist, welches
+                keine weiteren Elemente beinhaltet.
+                <br />
+                <br />
+                Weiter Markups die man häufig verwendet sind: Blockelemente und Inline-Elemente.
+                <br />
+                Sobald Elemente bei der Anzeige im Browserfenster immer in einer neuen Zeile beginnen, sind es
+                Blockelemente.
+                Beispiele für Blockelemente sind: &lt;h1&gt;, &lt;p&gt;, &lt;ul&gt; und &lt;li&gt;.
+                <br />
+                Wenn aber andere Elemente in derselben Zeile wie ihre Nachbarelemente stehen sind es Inline-Elemente.
+                Beispiele für Inline-Elemente sind: &lt;a&gt;, &lt;b&gt;, &lt;em&gt; und &lt;img&gt;.
+                <br />
+                <br />
+                Ein weiteres Element "&lt;div&gt;" wird auch sehr oft verwendet. dieses
+                nutzt man, um mehrere Elemente zu einem Block gruppieren zu können. Somit können Formatierungen
+                leichter vorgenommen werden.
+                <br />
+                <br />
+                Den Tag "&lt;meta&gt;" ist im &lt;head&gt; vorhanden. Er enthält die Informationen der Website
+                Es ist auch ein leeres Element. Dieses Element wird nur für die Infos für die Website verwendet,
+                darum können Benutzer das Element &lt;meta&gt; nicht sehen.
+
+
+
+            </p>
+
+
+        </div>
+        <h3 id="listen-titel">Listen</h3>
+        <div class="listen-abschnitt">
+            <p>Man unterscheidet zwischen mehreren Arten: &lt;ol&gt;, &lt;ul&gt;, &lt;dl&gt; und Verschachtelte Listen.
+            </p>
+            <p>Das erste Beispiel ist die geordnete Liste. In einer geordneten Liste macht man die Einträge
+                Mit dem Element: &lt;li&gt;. Diese Liste heisst deshalb "geordnet", da hier nur nummeriert wird.
+                Bei der &lt;ul&gt; (ungeordnete Liste) hingegen nutzt man Aufzählungssymbole, wie zum Beispiele
+                Quadrate oder auch Kreise. Prinzpiell werden diese beiden Listen identisch eingerichtet.
+
+            </p>
+            <p>Eine Definitionliste wird mit dem Element &lt;dl&gt; erstellt und bestehen normalerweise
+                aus einer Abfolge von Begriffen mit den zugehörigen Definitionen. In einer Definitionsliste
+                stehen gewöhnlich Paare aus &lt;dt&gt; und &lt;dd&gt; Elementen. Prinzipiell ist es hier
+                das selbe wie bei den oberen Listen. Das &lt;dt&gt;-Element ist der Definitionsterm.
+                Das &lt;dd&gt;-Element enthält die Definition des Begriffes.
+
+            </p>
+            <p>Zum Schluss gibt es noch die Verschachtelte Liste. Das bedeutet so viel wie "Liste in einer Liste".
+                Man erstellt eine liste (zum Beispiel &lt;ul&gt;) und erstellt in dieser nochmals zum Beispiel die
+                genau
+                gleiche Liste. Man muss diese Liste vor dem Endtag (in unserem Beispiel &lt;/ul&gt;) erstellen.
+                Nur so kann die verschachtelte Liste richtig funktionieren.
+            </p>
+
+        </div>
+
+        <h3 id="formulare-titel">Formulare</h3>
+        <div class="formulare-abschnitt">
+            <p>Die Formulare sind mittlerweile ein Muss in unserer Gesselschaft. Es vereinfacht das Surfen
+                Im Internet. Ein gutes Beispiel wäre die Google-Suche. Sobald man dort etwas eingibt, kommen
+                sehr viele Artikel zum gesuchten Begriff.
+                <br />
+                Man unterscheidet zwischen drei Sorten: Text eingeben, Auswahl treffen und Formulare einreichen.
+            </p>
+            <img src="bilder/formulare-arten.png" alt="formulare-arten" class="formulare-arten" title="Verschiedene Formulare" />
+            <p>Beim Aufbau von Formularen nutzt man &lt;form&gt;.
+                Jedes &lt;form&gt;-Element muss das Attribut action aufweisen. Sein Wert ist
+                der URL de Seite auf dem Server, der beim Einreichen ds Formulars die Infos empfängt. </p>
+            <p>Formulare können mit get oder post gesendet werden. Der Unterschied liegt darin,
+                dass bei "get" die Werte aus dem Formular an das Ende des URLs angehängt werden.
+                Dies wird häufig für kurze Formulare. verwendet. Auch kann man diese Methode für das Abrufen
+                von Daten vom Webserver verwenden.
+                Bei Post hingegen werden die Werte in sogenannten HTTP-Headern gesendet.
+                Post sollte man bei zum Beispiel langen Formularen einsetzen.
+            </p>
+            <p>
+                Mit &lt;input&gt; werden verschiedene Formularsteuerelemente erstellt,
+                derren art durch den Wert des Attributs type bestimmt wird. Hierbei kann mit &lt;size&gt;
+                die Grösse und mit &lt;name&gt; das Passwortfeld verändert werden.
+
+            </p>
+            <p>Mit &lt;button&gt; kann man einen Knopf erstellen, welchem man Funktionen zuteilen
+                kann. Wie zum Beispiel dass sobald man auf diesem Knopf draufklickt, man direkt zu einem Textabschnitt
+                hingeführt wird. Zudem ist es kein leeres Element.
+            </p>
+            <p>
+                Mit dem Element "hidden" kann man ein Element ausblenden,
+                jedoch wird dieses immer noch in der HTML-Datei angezeigt. Beim Aufrufen
+                einer Website werden diese Elemente im Hintergrund ausgeführt.
+            </p>
+            <p>
+                Mit dem Element &lt;label&gt; kann man die Formulare benennen und so
+                einstufen. Dieses Element hilft den sehbehinderten Benutzern. Mit dem Attribut
+                &lt;for&gt; kann man angeben, welchem Steuerelement welche Beschriftung zugeordnet werden soll. Der
+                Wert des Attributs &lt;for&gt; ist der id-Wert des Steuerelements, zu dem die Beschriftung gehört.
+                Die Attribute &lt;for&gt; und &lt;id&gt; lassen sich für alle Formularsteuerelemente verwenden. Bei
+                einem &lt;label&gt;-Element
+                für eine Checkbox oder einen RadioButton können die Benutzer zur Auswahl sowohl auf das eigentliche
+                Steuerelement als auch auf die Beschriftung klicken. Somit
+                kann das Formular leichter ausgefüllt werden.
+
+
+
+
+            </p>
+
+        </div>
+
+        <h3 id="fva-titel">Flash, Video & Audio</h3>
+
+
+        <div class="fva-abschnitt">
+
+            <p> Um Flash-Filme zu einer Website hinzufügen zu können, muss man das Element &lt;div&gt; nutzen.
+                <br />
+                Dieses Script nennt sich "SWFObject." Man kann es konstenlos von Google beziehen. Somit kann
+                man auf Webseiten Animationen, Video- und Audioinhalte wiedergeben.
+            </p>
+            <p>
+                Für HTML5 kamen neue Elemente, mit denen man Audio- oder Videoinhalte hinzufügen kann.
+                <br />
+                Die Elemente sind: &lt;video&gt; und &lt;audio&gt;.
+                Da diese Elemente neu sind, können sie nicht an alle Browser genutzt werden. Darum sollte man
+                möglichst immer diese zwei Formate nutzen: H264 (IE und Safari) und WebM (Android, Chrome, Firefox,
+                Opera).
+                <br />
+                Die meist genutzten Attributen für das Element &lt;video&gt; sind "src" und "width, height".
+                <br />
+                Mit dem Attribut "src" gibt man den Pfad der Videodatei an (H264 und
+                WebM).
+                <br />
+                Die Attribute "width" und "height" sind für die Breite und die Höhe gedacht.
+                <br />
+                <p> Bei dem Element &lt;audio&gt; gibt es auch mehrere Attribute. Die wichtgsten Attribute sind "src",
+                    "type" und "controls".
+
+                    Mit "src" wird der Dateipfad angegeben. Mit "controls" können Steuerelemente hinzugefügt werden.
+                    Weitere Attributen welche es noch gibt sind: "preload", "loop", "autoplay" und "loop".
+                    <br />
+                    Wenn man mehere Audioquelllen angeben möchte, muss man das Element &lt;source&gt; benutzen.
+                    Dieses Element kommt zwischen den beiden Tags &lt;audio&gt; und &lt;/audio&gt; (statt des Attributs
+                    "src" im öffnenden &lt;audio&gt; Tag). Hier gibt es zwei Attribute: "src" und "type".
+                    Mit "src" gibt man den Pfad der Datei an und mit "type" das Format der Audiodatei.
+                </p>
+            </p>
+
+
+        </div>
+
+        <h3 id="bilder-titel">Bilder</h3>
+        <div class="bilder-abschnitt">
+            <p> Das Element für das Einfügen von Bildern ist &lt;img&gt;. Die Attribute für dieses Element, welche
+                üblich sind lauten: "src", "alt", "title", "height" und "width".
+                <br />
+                Mit "src" wird dem Browser gesagt, wo sich das Bild befindet. Normalerweise wird ein relativer URL
+                genutzt.
+                <br />
+                "alt" nutzt man, um das Bild zu beschreiben, falls es nicht dargestellt werden kann. Zudem sollte
+                es auch eine Hilfe für Sehbehinderte sein, damit die genau wiessen, um was es auf diesem Bild gehen
+                würde.
+                <br />
+                Die Grössen können mit den Attributen "height" und "weight" spezifisch angepasst werden.
+                <p>
+                    Früher nutzte man das Attribut "align", damit man das Bild horizontal ausrichten konnte. Zudem
+                    gab man damit an, wie sich der Rest des Elementes verhalten hätte sollen. Dieses Attribut kann
+                    folgende Werte
+                    beinhalten: "left" und "right".
+
+                </p>
+
+                <p>
+                    Um Bilder vertikal ausrichten zu können, nutzte man dasselbe Attribut nur mit anderen
+                    Werten. Die Werte sind: "top", "middle" und "bottom".
+
+                </p>
+
+                <ol>
+                    <li>Bilder im richtigen Format speichern</li>
+                    <li>Die Bilder in der richtigen Grösse speichern</li>
+                    <li>Richtige Auflösung verwenden</li>
+
+                </ol>
+            </p>
+
+            <p>
+                Für das Bearbeiten von Bildern gibt es verschiedenste Methoden und Programme. Die bekanntesten
+                sind: Adobe Photoshop, GIMP und Paint.
+            </p>
+
+            <p>
+                Falls ein Bild sehr viele verschiedene Farben haben sollte, wäre hier das JPEG Format ideal.
+                Wenn eine Farbe auf einer grossen Fläche erkannt werden kann, wirk das so, als beinhalte es nur
+                eine Farbe. Im Hintergrund jedoch befinden sich viele verschiedenen Farben, welche sich um Nuancen
+                unterscheiden.
+
+            </p>
+            <p></p>
+
+            <p>
+                Wenn man einen Bildbereich hat, welcher durchgängig mit einer gleichen Farbe ausgefüllt ist,
+                dann spricht man von "flachen Farben". Beispiele Dafür sind: Logos, Zeichungen und Diagramme.
+                Wenn diese Aussagen zutreffen, sollte man die Formate GIF und PNG nutzen.
+            </p>
+
+            <p>
+                Wenn man eine Unterschrift mit einem Bild zusammenhängen möchte, muss man im aktuellen HTML5 das
+                Element
+                &lt;figure&gt; nutzen. Wenn man eine Unterschrift mit mehreren Bildern teilen möchte, können
+                mehrere Bilder im gleichen Element stehen.
+                <br />
+                Mit dem Element &lt;figcaption&gt; kann man den Bildern eine Unterschrift zuteilen.
+
+
+            </p>
+        </div>
+
+        <h3 id="links-titel">Links</h3>
+        <div class="links-abschnitt">
+            <p>
+                Um Links einzufügen, wird das Element &lt;a&gt; genutzt. Zudem gehört das Attribut "href" dazu. Dies
+                führt dann
+                zu der Seite, auf welcher hingewiesen wurde. Führt der Link zu einer anderern Website, muss der Wert
+                von
+                "href" die komplette Webadresse dieser Seite angeben. Dies ist ein absoluter URL. Wenn sich aber alle
+                Seiten der Website im selben Ordner befinden,
+                dann ist der Wert für das Attribut "href" der Dateiname der Seite.
+                <br />
+                Relative URLs sind darum nützlich, weil man zwischen den Seiten Links aufbauen kann, ohne einen
+                Domänenamen einzurichten oder
+                für das Hosting zu denken.
+            </p>
+            <p>
+                Die Verzeichnisstruktiur ist bei grösseren Websiten sehr wichtig, da die Gliederung im Vordergrund
+                steht
+                und somit die Übersicht beibehalten werden kann.
+                <br />
+                Es fängt mit dem Wurzelordner (Grosselternordner) an, welcher alle Dateien und Ordner der Website
+                beinhaltet.
+                Danach folgen folgenden Ordner: Elternornder, Enkelordner, Kinderordner, derselbse Ordner
+
+            </p>
+
+            <p>
+                Email-Links ist eine Sache, welche sehr oft genutzt wird. Das Element,
+                welches hierfür genutzt wird nennt sich "mailto". Hier wird prinzipiel (siehe <a href="hier">hier</a>)
+                das gleiche genutzt wie auf dem Bild.
+                Hier wird anstatt der Pfad die E-Mail genutzt.
+            </p>
+            <p>
+                Wenn der Link die Zielseite in einem neuen Fenster öffnen soll, kann man im öffnenden &lt;a&gt;-Tag das
+                Attribut
+                "target" verwenden. Der Wert soll "_blank" heissen.
+            </p>
+            <p>Um einen Link auf der selben Seite verweisen zu können, muss man das Zeichen # nutzen. Dies
+                nutzt man nur, wenn eine ID genutzt wurde, keinestfalls auf CLASS.
+            </p>
+
+        </div>
+
+        <h3 id="tabellen-titel">Tabellen</h3>
+        <div class="tabellen-abschnitt">
+            <p>
+                Eine Tabelle wird mit dem Element &lt;table&gt; erstellt.
+                Die Inhalte der Tabelle werden Zeile für Zeile geschrieben.
+                <br />
+                Mit dem Element &lt;tr&gt; Wird eine Tabellenzeile gemacht. Darauf
+                folgt jeweils ein &lt;td&gt; Element für jede Zelle in der Zeile. Am Ende
+                der Zeile kommt das schliessende &lt;/tr&gt;-Tag.
+                <br />
+                Die EInzelnen Zellen werden durch &lt;td&gt; Elemente dargestellt.
+                Das "td" steht für "Tabellendaten". Am Schluss kommt das schliessende Tag &lt;/td&gt;.
+            </p>
+            <p>
+                Tabellenüberschriften werden mit dem Element &lt;th&gt; gemacht. Es wird ebenso verwendet
+                wie &lt;td&gt;, steht aber für die Überschrift einer Spalte oder Zeile.
+                <br />
+                Wenn kein Inhalt vorhanden ist, muss man das Element &lt;td&gt; oder &lt;th&gt;
+                nutzen, sodass das Vorhandensein der leeren Zelle in der ersten Zeile.
+                <br />
+                Mit dem Attribut "scope" von &lt;th&gt; wird angegeben, für welche Spalte oder Zeile
+                die Überschrift zuständig sind.
+                <br />
+                Mit dem Attribut "colspan" können Spalten zusammengeführt werden.
+                <br />
+                Bei Zeilen verwendet man das Attribut "rowspan".
+                <p>
+                    Wenn man lange Tabellen hat, kann man eine solche Tabelle in drei teilen
+                    unterteilen: &lt;thead&gt;, &lt;tbody&gt; und &lt;tfoot&gt;. Diese Elemente können sehr
+                    nützlich sein, da sie den Benutzern, welche Sreenreader nutzen, sehr hilfreich sind. Zudem
+                    können diese Abschnitte anders gestalten werden als der Rest der Tabelle.
+
+                </p>
+            </p>
+
+
+        </div>
+
+        <h3 id="css-titel">CSS</h3>
+        <div class="css-abschnitt">
+
+            <p>
+                CSS ist eines der wichtigsten Bestandteile der Website. Man nutzt es, um die Elemente und derren
+                Inhalt zu gestalten.
+                <br />
+                Beispiele: Hintergrundfarbe, Schriftart, Abstand zum Rand etc.
+            </p>
+
+        </div>
+
+        <h3 id="css-einbinden-titel">CSS einbinden</h3>
+        <div class="css-einbinden-abschnitt">
+            <p>Mitlerweile gibt es zwei Arten, wie man mit CSS arbeiten kann. Entweder direkt im HTML-File mit dem
+                Element &lt;style&gt;, oder mit einem externen CSS-File. Wenn man ein CSS-File einbinden möchte, muss im 
+                Element &lt;head&gt; folgendes stehen:
+            </p>
+
+            <img src=""
+
+        </div>
+
+        <h3 id="css-regel-titel">CSS-Regel</h3>
+        <div class="css-regel-abschnitt"></div>
+
+        <h3 id="selektor-titel">Selektor</h3>
+        <div class="selektor-abschnitt"></div>
+
+        <h3 id="text-titel">Text</h3>
+        <div class="text-abschnitt"></div>
+
+        <h3 id="fonts-titel">Fonts</h3>
+        <div class="fonts-abschnitt"></div>
+
+        <h3 id="farbe-titel">Farbe</h3>
+        <div class="farbe-abschnitt"></div>
+
+        <h3 id="kaesten-titel">Kästen</h3>
+        <div class="kaesten-abschnitt"></div>
+
+        <h3 id="ltf-titel">Listen, Tabellen & Formulare</h3>
+        <div class="ltf-abschnitt"></div>
+
+        <h3 id="bilder-titel">Bilder</h3>
+        <div class="bilder-abschnitt"></div>
+
+        <h3 id="boxmodel-titel">Box Model</h3>
+        <div class="boxmodel-abschnitt"></div>
+
+        <h3 id="flexbox-titel">Flexbox</h3>
+        <div class="flexbox-abschnitt"></div>
+
+        <h3 id="mq-titel">Media Queries</h3>
+        <div class="mq-abschnitt"></div>
+
 
     </main>
 
@@ -194,6 +570,13 @@
 
 
     <footer>
+        <ul class="footer-liste">
+
+            <li>Kontaktinformationen</li>
+        </ul>
+
+
+
 
     </footer>
 

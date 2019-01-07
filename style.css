@@ -1,3 +1,8 @@
+* {
+    font-family: Arial;
+
+}
+
 body {
 color:white;
 }
@@ -11,7 +16,8 @@ main {
     border-right: solid blue;
     padding-left: 20px;
     padding-right: 20px;
-    margin-top: 130px;
+    margin-top: 100px;
+
 }
 
 img.web-bild {
@@ -53,13 +59,11 @@ img.zugriff-website {
     font-size: 36px;
 }
 
-
 .nav-liste {
     display: flex;
     flex-direction: row;
     justify-content: center;
     background: linear-gradient(to right, orange, blue);
-    padding-top: 0;
     border-top-left-radius: 200px;
     border-top-right-radius: 200px;
 }
@@ -67,7 +71,7 @@ img.zugriff-website {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: rgb(226, 161, 76);
+    background: linear-gradient( orange, blue);
     border-bottom-left-radius: 40px; 
     border-bottom-right-radius: 40px;
 
@@ -92,6 +96,7 @@ img.zugriff-website {
 .nav-liste li {
     list-style-type: none;
     padding: 20px 60px 20px 60px;
+    width:33.3%;
 }
 
 .nav-liste a {
@@ -138,7 +143,7 @@ a:active {
     background-color:rgba(0, 0, 0, 0.5);
 }
 
-#link-tabellen:hover {
+#tabellen-link:hover {
     border-bottom-left-radius: 40px; 
     border-bottom-right-radius: 40px;
 
@@ -195,4 +200,35 @@ img.html-elemente {
 
 #knopf-sonstiges:hover {
     background:rgba(0, 0, 0, 0.3);
+}
+
+img.formulare-arten {
+    width: 400px;
+    position: relative;
+}
+
+.footer-liste {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background: linear-gradient(to right, orange, blue);
+    border-bottom-left-radius: 200px;
+    border-bottom-right-radius: 200px;
+    padding: 20px 60px 20px 60px;
+    margin-top: 100px;
+
+}
+
+.footer-liste li {
+    list-style-type: none;
+    font-weight: bold;
+    font-size: 18px;
+
+}
+
+#css-titel {
+    font-size: 28px;
+    text-align: center;
+    margin-top: 110px;
+
 }
