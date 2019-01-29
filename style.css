@@ -289,7 +289,10 @@ img.formulare-arten {
     margin-top: 110px;
 }
 
-
+#formulare-titel-css {
+    text-decoration: underline;
+    margin-top: 50px;
+}
 
 #fva-titel {
     margin-top: 110px;
