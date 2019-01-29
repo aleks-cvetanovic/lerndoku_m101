@@ -171,7 +171,6 @@ a:active {
 }
 
 
-
 #tabellen-link:hover {
     border-bottom-left-radius: 40px; 
     border-bottom-right-radius: 40px;
@@ -214,6 +213,10 @@ img.html-elemente {
     border-style:none;
     background:content-box;
 
+}
+
+#knopf-css a:hover {
+    text-decoration: underline;
 }
 
 #knopf-css:hover {
@@ -260,6 +263,10 @@ img.formulare-arten {
     text-align: center;
     margin-top: 200px;
 
+}
+
+#tabelle-css {
+    margin-top: 50px;
 }
 
 #css-einbinden-titel {
