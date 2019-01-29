@@ -24,11 +24,11 @@
                 <div class="dropdown">
 
                     <button id="knopf-html">
-                        <li><a href="#html-main-titel" id="link-html">HTML</a>
+                        <li><a href="#html-main-titel">HTML</a></li>
                     </button>
 
 
-                    <div class="dropdown-content">
+                    <div class="dropdown-content-1">
                         <a href="#elemente-titel">Elemente</a>
                         <a href="#text-titel">Text</a>
                         <a href="#besonderes-markup-titel">besonderes Markup</a>
@@ -42,11 +42,27 @@
                 </div>
 
 
-
+                <div class="dropdown-2">
 
                 <button id="knopf-css">
-                    <li><a href="#titel-css">CSS</a></li>
+                    <li><a href="#titel-css" id="links-css">CSS</a></li>
                 </button>
+
+                <div class="dropdown-content-2">
+                    <a href="#css-einbinden-titel">CSS einbinden</a>
+                    <a href="#css-regel-titel">CSS Regel</a>
+                    <a href="#selektor-titel">Selektor</a>
+                    <a href="#text-titel">Text</a>
+                    <a href="#fonts-titel">Google Fonts</a>
+                    <a href="#farbe-titel">Farbe </a>
+                    <a href="#kaesten-titel">Kästen</a>
+                    <a href="#ltf-titel">Listen, Tabellen & Formulare</a>
+                    <a href="#css-bilder-titel">Bilder</a>
+                    <a href="#flexbox-titel">Flexbox</a>
+                    <a href="#mq-titel">Media Queries</a>
+
+                </div>
+                </div>
 
                 <button id="knopf-sonstiges">
                     <li><a href="#titel-sonstiges">Sonstiges</a></li>
@@ -446,6 +462,7 @@
             <p>Um einen Link auf der selben Seite verweisen zu können, muss man das Zeichen # nutzen. Dies
                 nutzt man nur, wenn eine ID genutzt wurde, keinestfalls auf CLASS.
             </p>
+            <img src="bilder/links-beispiel.jpg"/>
 
         </div>
 
@@ -483,6 +500,7 @@
 
                 </p>
             </p>
+            <img src="bilder/tabelle-beispiel.png"/>
 
 
         </div>
@@ -543,11 +561,11 @@
 
         </div>
 
-        <h3 id="fonts-titel">Fonts</h3>
+        <h3 id="fonts-titel">Google Fonts</h3>
         <div class="fonts-abschnitt">
 
-            <p>All Informationen zu diesem Kapitel sind auf folgender Website zu finden:</br>
-                <a href="https://www.w3schools.com/css/css_font.asp">CSS-Fonts </a>
+            <p>All Informationen zu diesem Kapitel sind auf folgender Website zu finden:</p>
+                <p><a href="https://www.w3schools.com/howto/howto_google_fonts.asp">https://www.w3schools.com/howto/howto_google_fonts.asp </a>
             </p>
 
         </div>
@@ -555,8 +573,8 @@
         <h3 id="farbe-titel">Farbe</h3>
         <div class="farbe-abschnitt">
 
-            <p>All Informationen zu diesem Kapitel sind auf folgender Website zu finden:</br>
-                <a href="https://www.w3schools.com/css/css3_colors.asp">CSS-Farbe </a></p>
+            <p>All Informationen zu diesem Kapitel sind auf folgender Website zu finden:</p>
+                <p><a href="https://www.w3schools.com/css/css3_colors.asp">https://www.w3schools.com/css/css3_colors.asp</a></p>
 
 
         </div>
@@ -564,17 +582,69 @@
         <h3 id="kaesten-titel">Kästen</h3>
         <div class="kaesten-abschnitt">
 
-            <p>All Informationen zu diesem Kapitel sind auf folgender Website zu finden: </br>
-            <a href="https://www.w3schools.com/css/css_boxmodel.asp">CSS-Kästen </a></p>
+            <p>Ein Kasten wird in drei verschiedene Kategorien unterteilt. Zum einen fängt es mit dem Padding an, welcher den Innenraum 
+                eines Kastens beschreibt. Danach folgt die Border, welche der Rand des Kastens darstellt. Zum Schluss 
+                ist noch der Aussenrand (margin) vorhanden, welcher den Aussenraum einnimmt. <br/>
+                Die Eigenschaften "pading" und "margin" sind sehr nützlich, um Abstände zwischen den einzelnen Elementen auf einer Seite 
+                einzuräumen.
+            </p>
+            <img src="bilder/box-modell.png"/>
 
+            <p>Der Kasten ist standardm&auml;ssig gerade mal gross genug f&uuml;r seinen Inhalt.
+                 Mit den Eigenschaften &quot;height&quot; und &quot;width&quot; 
+                kann man die Abmessungen eines Kastens festlegen.
+            </p>
+            <img src="bilder/kaesten-abmessungen-beispiel.png"/>
+            <p>Sehr nützliche Funktionen können auch die Einschränkungen von der Höhe und der Breite sein. 
+                Dies hat den Vorteil, dass man die Grösse der Fenstergrösse anpassen kann. <br/>
+                Für die Breite nutzt man folgende Eigenschaften: <br/>
+                &quot;min width&quot;, &quot;max-width&quot;
+
+            </p>
+            <p>Für die Höhe nutzt man folgende Eigenschaften: <br/>
+                &quot;min-height&quot;, &quot;max-height&quot;
+            </p>
+            
+            <p>
+                Mit der Eigenschaft "display" kann man Inline- in Blockelemente umwandeln und umgekehrt. 
+                Ausserdem ist es damit möglich, Elemente auf der Seite auszublenden. <br/>
+                Diese Eigenschaft kann folgende Werte annehmen: <br/>
+                "inline", "block", "inline-block" & "none"
+                <p>Es gibt viele weitere Eigenschaften und Werte, welche man noch nutzen kann. Diese sind auf folgender 
+                    Website zu finden: <br/>
+                </p>
+                <a href="https://www.w3schools.com/css/css_boxmodel.asp">https://www.w3schools.com/css/css_boxmodel.asp</a>
+            </p>
 
         </div>
 
         <h3 id="ltf-titel">Listen, Tabellen & Formulare</h3>
         <div class="ltf-abschnitt">
 
-            <p>All Informationen zu diesem Kapitel sind auf folgender Website zu finden: <br/>
-            <a href="All Informationen zu diesem Kapitel sind auf folgender Website zu finden:">CSS-Listen, Tabellen & Formulare</a></p>
+            <p><u>Liste</u>
+           </p>
+           <p>Ein Liste kann verschiedenster Arten bestehen. Normalerweise nutzt man Nummerierungen, Auflistungen und Definitionslisten. 
+               <br/>
+               Wenn man Aufzählungspunkte gestalten möchte, dann nutzt man "list-style-type", <br/>
+               Wenn man Aufzählungspunkte aus Grafiken haben möchte, dann ist "list-style-image" zu nutzen. <br/>
+               Um Aufzählungspunkte positionieren zu können, muss man die Eigenschaft "list-style-position" brauchen. 
+               <p><u>Tabelle</u></p>
+               <p>Wie bei vielen anderen Eigenschaften kann man auch hier viele gleichartige Werte einsetzen. 
+                   Zum einen gibt es "width" & "height", zum anderen auch "background-color" etc. Einige neue gibt es aber:
+
+               </p>
+               <p>Es gibt die sogennante "empty-cells"-Eigenschaft, welche man braucht, um den leeren 
+                    Zellen den Rahmen ein- oder auszublenden. Folgende drei Werte werden hierbei genutzt: <br/>
+                    "show", "hide" & "inherit" <br/>
+                    Inherit wird genutzt, um den Tabellenzellen mitzuteilen, dass sie den Regeln für die umfassende Tabelle 
+                    gehorchen sollen.
+               </p>
+               <p>Eine weitere Veränderung, welche man an der Tabelle anrichten könnte, wäre
+                 der Abstand zwischen den Zellen. Dieser wird mit den Eigenschaften "border-spacing" und "border-collapse" angepasst. 
+                Mit CSS wird die Darstellungsart von den Formularen angepasst,</p>
+
+
+           </p>
 
 
         </div>
@@ -582,24 +652,45 @@
         <h3 id="css-bilder-titel">Bilder</h3>
         <div class="bilder-abschnitt">
 
-            <p>All Informationen zu diesem Kapitel sind auf folgender Website zu finden:</br>
-                <a href="https://www.html-seminar.de/css_bilder_und_hintergrundbilder.htm">CSS-Bilder</a></p>
+            <p>
+                Wie auch bei vielen anderen Eigenschaften gibt es hier die Werte "height" und "width" ebenfalls.
+                Mit diesen Werten kann man einem Bild die Grösse anpassen. Mit diesen Entstellungen kann auch das Laden 
+                der Website deutlich verschnellern, da die Website schon daher im Voraus bescheit bekommt, wie sie sich verhalten 
+                soll.
+                </p>
+                <p>Um diese Werte einsetzen zu können, muss man das Bild natürlich ansprechen. Dies tut man entweder, 
+                    indem man die "class" oder "id" oder das Bild ("img.wert") anspricht.
+                </p>
+                <p>Mit der Eigenschaft "float" kann man die Bilder fliessen lassen und positionieren. Somit kann man zum 
+                    Beispiel sagen, dass das Bild neben oder unterhalb dem Text fliessen soll.
+                </p>
+                <p>
+                    Mit der Eigenschaft "background" kann der Hintergrund nach Belieben angepasst werden. Die wesentlichsten Werte  
+                    dazu sind: "position" und "color"
+
+                </p>
+                <img src="bilder/bilder-beispiele.png" alt="Bilder-Beispiel"/>
+                <p>
+                    Weitere Informationen zu diesem Kapitel sind auf dieser Seite zu finden:
+                </p>
+                <a href="https://www.html-seminar.de/css_bilder_und_hintergrundbilder.htm">https://www.html-seminar.de/css_bilder_und_hintergrundbilder.htm</a>
         </div>
 
 
         <h3 id="flexbox-titel">Flexbox</h3>
         <div class="flexbox-abschnitt">
 
-            <p>All Informationen zu diesem Kapitel sind auf folgender Website zu finden:</br>
-                <a href="https://www.w3schools.com/css/css3_flexbox.asp">Flexbox</a></p>
+            <p>All Informationen zu diesem Kapitel sind auf folgender Website zu finden:</p>
+               <p> <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">https://css-tricks.com/snippets/css/a-guide-to-flexbox/</a></p>
 
         </div>
 
         <h3 id="mq-titel">Media Queries</h3>
         <div class="mq-abschnitt">
 
-            <p>All Informationen zu diesem Kapitel sind auf folgender Website zu finden:</br>
-                <a href="https://www.w3schools.com/css/css3_mediaqueries.asp">Media Queries</a></p>
+            <p>All Informationen zu diesem Kapitel sind auf folgender Website zu finden:
+                </p>
+                <p><a href="https://www.w3schools.com/css/css3_mediaqueries.asp">https://www.w3schools.com/css/css3_mediaqueries.asp</a></p>
 
         </div>
 
@@ -608,9 +699,15 @@
         <h3 id="Wireframe">Wireframe</h3>
         <div>
 
+
+            <p>Ein Wireframe ("Drahtmodell") ist eine einfache Skizze der wichtigsten Informationen, 
+                die auf die einzelnen Seiten einer Website gehören. Sie zeigt die Hierarchie der Informationen und den
+                dafür benötigten Platz.
+            </p>
+            <img alt="Wireframe-Beispiel" src="bilder/wireframe-beispiel.png" id="wireframe-beispiel"/>
             <p>Unter dieser Website kann man ein Wireframe erstellen:
-                <br/>
-                <a href="https://gomockingbird.com/home">Wireframe erstellen</a>
+            </p>
+               <p><a href="https://gomockingbird.com/home">https://gomockingbird.com/home</a>
             </p>
 
         </div>
@@ -619,9 +716,29 @@
         <div>
 
             <p>Unter dieser Website kann man ein Sitemap erstellen:
-            <br/> <a href="https://www.gloomaps.com/">Sitemap</a>   </p>
+            <br/> <a href="https://www.gloomaps.com/">Sitemap</a>  </p>
 
         </div>
+
+        <h3 id="layout-html">Layout in HTML</h3>
+        <div>
+            <p>
+            Der Überblick beim Aufbau einer Website ist überaus wichtig. Darum kann man gewisse 
+            Bereiche in Abschnitte unterteilen. Wenn man CSS in HTML einbinden möchte, dann möchte man ja nicht, 
+            dass der Code auf der Website angezeigt werden soll. Darum schreibt man den Code im 
+            &lt;head&gt;. Den Hauptteil einer Website kommt in den &lt;body&gt;. Am Schluss kommt der &lt;footer&gt;, welcher 
+            alle restlichen Informationen aufsammelt (Kontaktinformationen etc.). </p>
+            <p>Die Details sind auf dieser Website zu finden:</p>
+            <p><a href="https://www.w3schools.com/html/html_layout.asp">https://www.w3schools.com/html/html_layout.asp</a></p>
+            <img src="bilder/html-layout.gif" alt="HTML-Layout"/>
+        </div>
+        <h3 id="validierung">Validierung</h3>
+        <div>
+            <img src="bilder/validierung.PNG" id="validierung"/>
+
+        </div>
+        <h3 id="Testprotokoll">Testprotokoll</h3>
+        <div></div>
 
         
 

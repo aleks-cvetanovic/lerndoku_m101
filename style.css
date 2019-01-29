@@ -68,7 +68,7 @@ img.zugriff-website {
     border-top-right-radius: 200px;
 }
 
-.dropdown-content {
+.dropdown-content-1 {
     display: none;
     position: absolute;
     background: linear-gradient( orange, blue);
@@ -77,7 +77,7 @@ img.zugriff-website {
 
 }
 
-.dropdown-content a {
+.dropdown-content-1 a {
     text-decoration: none;
     display: block;
     text-align: center;
@@ -85,13 +85,10 @@ img.zugriff-website {
 
 }
 
-.dropdown:hover .dropdown-content {
+.dropdown:hover .dropdown-content-1 {
     display :block;
 }
 
-.dropdown:hover main {
-    margin-top: 200px;
-}
 
 .nav-liste li {
     list-style-type: none;
@@ -121,27 +118,59 @@ a:active {
     justify-content: center;
 }
 
-#titel-html:hover .dropdown-liste {
-    display:block;
-}
-
 .dropdown {
     position:relative;
     display:inline-block;
 }
 
-.dropdown-content {
+.dropdown-content-1 {
     display:none;
     position:absolute;
 }
 
-.dropdown:hover .dropdown-content {
+.dropdown:hover .dropdown-content-1 {
     display: block;
 }
 
-.dropdown-content a:hover {
+.dropdown-content-1 a:hover {
     background-color:rgba(0, 0, 0, 0.5);
 }
+
+
+.dropdown-2:hover .dropdown-content-2 {
+    display:block;
+}
+
+.dropdown-content-2 {
+    display:none;
+    position:absolute;
+}
+
+.dropdown-2 {
+    position:relative;
+    display:inline-block;
+}
+
+.dropdown-content-2 {
+    display: none;
+    position: absolute;
+    background: linear-gradient( orange, blue);
+    border-bottom-left-radius: 40px; 
+    border-bottom-right-radius: 40px;
+}
+
+.dropdown-content-2 a:hover {
+    background-color:rgba(0, 0, 0, 0.5);
+}
+
+.dropdown-content-2 a {
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding:10px;
+}
+
+
 
 #tabellen-link:hover {
     border-bottom-left-radius: 40px; 
@@ -336,3 +365,13 @@ img.formulare-arten {
 #sitemap {
     margin-top: 110px;
 }
+
+#wireframe-beispiel {
+    width: 800px;
+    height: 450px;
+}
+
+#links-css {
+    
+}
+
