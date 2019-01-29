@@ -187,7 +187,7 @@ a:active {
 #html-main-titel {
     font-size: 28px;
     text-align: center;
-    margin-top: 110px;
+    margin-top: 200px;
 }
 
 .html-abschnitt {
@@ -258,7 +258,7 @@ img.formulare-arten {
 #css-titel {
     font-size: 28px;
     text-align: center;
-    margin-top: 110px;
+    margin-top: 200px;
 
 }
 
@@ -355,7 +355,7 @@ img.formulare-arten {
 #praxis {
     font-size: 28px;
     text-align: center;
-    margin-top: 110px;
+    margin-top: 200px;
 }
 
 #Wireframe {
@@ -367,11 +367,25 @@ img.formulare-arten {
 }
 
 #wireframe-beispiel {
-    width: 800px;
-    height: 450px;
+    width: 700px;
+    height: 400px;
 }
 
-#links-css {
-    
+#validierung-titel {
+    margin-top: 110px;
 }
+
+#validierung {
+    width: 600px;
+    height: 300px;
+}
+
+#layout-html {
+    margin-top: 110px;
+}
+
+#testprotokoll {
+    margin-top: 110px;
+}
+
 
